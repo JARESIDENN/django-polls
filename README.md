@@ -1,4 +1,5 @@
-# Django Tutorial Polls App
+# NGETCHAM NJAPA Pierre Dennick
+## Django Tutorial Polls App
 
 This repository contains the complete code for the [Django](https://www.djangoproject.com/) project's [tutorial](https://docs.djangoproject.com/en/2.1/intro/tutorial01/) `polls` app. The code should mirror the code you've written at the end of [Part 7](https://docs.djangoproject.com/en/2.1/intro/tutorial07/). 
 
