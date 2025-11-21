@@ -7,6 +7,31 @@ The `SECRET_KEY` variable in `mysite/settings.py` has been scrubbed, and instruc
 
 This app is meant to be used as a reference Django app for several DigitalOcean tutorials, and should not be deployed in production.
 
+## 🚀 Déploiement sur Amazon ECR avec Terraform
+
+Ce projet inclut maintenant une configuration Terraform complète pour déployer l'application sur Amazon ECR (Elastic Container Registry).
+
+### Déploiement rapide
+
+```powershell
+# Déploiement automatisé
+.\deploy-to-ecr.ps1
+
+# Ou manuellement
+terraform init
+terraform plan
+terraform apply
+```
+
+📖 **Documentation complète** : Consultez [TERRAFORM_ECR.md](TERRAFORM_ECR.md) pour les instructions détaillées.
+
+### Fichiers Terraform
+
+- `main.tf` - Configuration principale (providers AWS & Docker, ressources ECR)
+- `variables.tf` - Variables configurables
+- `outputs.tf` - Outputs après déploiement (URLs, ARNs)
+- `terraform.tfvars.example` - Exemple de configuration personnalisée
+
 ----
 
 ### Quickstart

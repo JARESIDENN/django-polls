@@ -7,6 +7,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+# Rendre le script executable
+RUN chmod +x entrypoint.sh
+
 EXPOSE 8000
 
-CMD python manage.py migrate && python manage.py runserver 0.0.0.0:8000
+ENTRYPOINT ["./entrypoint.sh"]

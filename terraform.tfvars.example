@@ -1,0 +1,13 @@
+# Copiez ce fichier vers terraform.tfvars et modifiez les valeurs selon vos besoins
+
+# Région AWS pour le déploiement
+aws_region = "us-east-1"
+
+# Nom du repository ECR
+ecr_repository_name = "django-polls"
+
+# Environnement de déploiement
+environment = "development"
+
+# Tag de l'image Docker
+image_tag = "latest"
